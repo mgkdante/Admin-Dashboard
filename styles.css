@@ -39,3 +39,9 @@ body{
     padding: 10px;
     display: grid;
 }
+
+.content-top {
+    display: grid;
+    grid-area: 1 / 1 / 1 / 1;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
