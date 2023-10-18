@@ -2,181 +2,267 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .container {
+    background-color: #1a1a2e; /* dark blue */
+    color: #fff;
+}
+
+.container {
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: 100%;
-  }
-  
-  .sidebar {
-    grid-area: 1 / 1 / 1 / 1;
-    background-color: #fcffcc;
-    color: #333;
+}
+
+.sidebar {
+    background-color: #ff4d4d; /* red */
+    color: #fff;
     padding: 10px;
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-  }
-  
-  .sidebar-title {
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.sidebar-title {
     text-align: center;
-  }
-  
-  .sidebar-nav {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Pacifico';
+}
+
+.sidebar-nav {
+    display: grid;
     margin-top: 20px;
-  }
-  
-  .top-nav,
-  .bottom-nav {
+}
+
+.top-nav,
+.bottom-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     margin: 10px 0;
-  }
-  
-  .nav-item a {
-    color: #333;
+}
+
+.nav-item a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-item a:hover {
-    color: #ab66ff;
-  }
-  
-  .content {
+}
+
+.nav-item a:hover {
+    color: #ab66ff; /* light blue */
+}
+
+.content {
     grid-area: 1 / 2 / 1 / 2;
     background-color: #fff;
     padding: 10px;
+    height: 100%;
+}
+
+.content-top {
     display: grid;
-    height: 100;
-  }
-  
-  .content-top {
+    grid-template-columns: 2fr 1fr;
+}
+
+.top-left {
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
-  }
-  
-  .top-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .searchbar input[type="text"] {
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchbar {
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.searchbar input[type="text"] {
     border: none;
     border-radius: 20px;
     padding: 10px;
     font-size: 1.2rem;
     background-color: #f2f2f2;
-  }
-  
-  .welcome-message h1 {
+}
+
+.welcome-message h1 {
     font-size: 2rem;
     margin-left: 20px;
-  }
-  
-  .top-right {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-right {
     display: grid;
     align-items: center;
     justify-content: flex-end;
-  }
-  
-  .profile h4 {
+}
+
+.profile h4 {
     margin-right: 20px;
     font-size: 1.2rem;
-  }
-  
-  .post-options {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-options {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.post-options div {
+    display: flex;
     margin-left: 10px;
     padding: 5px 10px;
     border-radius: 20px;
     background-color: #fcffcc;
     color: #333;
-  }
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
-  
-  .content-main {
+.post-options div:hover {
+    background-color: #ab66ff; /* light blue */
+    color: #fff;
+}
+
+.content-main {
     display: grid;
     grid-template-columns: 7fr 1fr;
     grid-area: 2 / 1 / 2 / 1;
-  }
-  
-  .projects {
-    grid-area: 1/1/1/1;
-  }
+}
 
-  
-  .project-list {
+.projects {
+    grid-area: 1/1/1/1;
+}
+
+.project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     overflow-y: auto;
     height: min-content;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .project-list {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  
-  .item {
+}
+
+.item {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     background-color: #f2f2f2;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .item:hover {
+}
+
+.item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .item h5 {
+}
+
+.item h5 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-  }
-  
-  .item p {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item p {
     font-size: 1rem;
     margin-bottom: 10px;
-  }
-  
-  .annoucement-trending {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.annoucement-trending {
     display: grid;
     grid-area: 1/2/1/2;
     padding: 10px;
-  }
-  
-  .anouncement h1,
-  .trending-list h1 {
+    background-color: #fff;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.announcements h1,
+.trending h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-  
-  .annoucement-list,
-  .trending {
+    color: #000000; /* blue */
+    font-family: 'Montserrat', sans-serif; /* change to a more elegant font */
+}
+
+.annoucement-list,
+.trending-list {
     display: grid;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .annoucement h6,
-  .trending h6 {
+    height: min-content;
+}
+
+.annoucement h6,
+.trending h6 {
     margin-right: 10px;
     font-size: 1.2rem;
-  }
-  
-  .annoucement p,
-  .trending p {
-    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.trending-main h1 {
+    color: #000000;
+}
+
+.annoucement p,
+.trending p {
+    font-size: 0.90rem;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.annoucement {
+    border-left: 5px solid #6687ff; /* light blue */
+    padding-left: 5px;
+    margin-bottom: 10px;
+    background-color: #fff; /* change to white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.annoucement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ab66ff; /* light blue */
+    color: #fff;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff; /* change to white */
+    transition: all 0.3s ease-in-out;
+}
+
+.trending-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0;
+}
+
+.trending:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ab66ff; /* light blue */
+    color: #fff;
+}
+
+#projects-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
   }
