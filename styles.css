@@ -53,7 +53,7 @@ body {
 }
 
 .nav-item a:hover {
-    color: #ab66ff; /* light blue */
+    color: #003cff; /* light blue */
 }
 
 .content {
@@ -117,7 +117,7 @@ body {
     margin-left: 10px;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: #fcffcc;
+    background-color: #ccdaff;
     color: #333;
     font-weight: bold;
     font-size: 1.2rem;
@@ -126,7 +126,7 @@ body {
 }
 
 .post-options div:hover {
-    background-color: #ab66ff; /* light blue */
+    background-color: #ff6685; /* light blue */
     color: #fff;
 }
 
@@ -233,7 +233,7 @@ body {
 .annoucement:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #ab66ff; /* light blue */
+    background-color: #44b5ed; /* light blue */
     color: #fff;
 }
 
@@ -256,7 +256,7 @@ body {
 .trending:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #ab66ff; /* light blue */
+    background-color: #f67fba; /* light blue */
     color: #fff;
 }
 
