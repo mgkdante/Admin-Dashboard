@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Admin Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -12,172 +12,176 @@
 
 <body>
 
-    <div class="container">
-        <div class="sidebar">
-            <div class="sidebar-title">
-                <h1>Dashboard</h1>
-            </div>
-            <div class="sidebar-nav">
-                <div class="top-nav">
-                    <div class="nav-item">
-                        <a href="#">Home</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">Messages</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">History</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">Tasks</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">Communities</a>
+<div class="container">
+    <aside>
+        <header>
+            <img src="view-dashboard.svg" alt="Logo">
+            <h1>Dashboard</h1>
+        </header>
+        <nav>
+            <h3>🏠Home</h3>
+            <h3>👲Profile</h3>
+            <h3>📩Messages</h3>
+            <h3>🕒History</h3>
+            <h3>📄Tasks</h3>
+            <h3>🫂Communities</h3>
+        </nav>
+        <section class="help">
+            <h3>⚙️Settings</h3>
+            <h3>❔Support</h3>
+            <h3>🛡️Privacy</h3>
+        </section>
+    </aside>
+    <main>
+        <header>
+            <section>
+                <div id="search">
+                    <label for="search-box">🔍</label>
+                    <input type="search" id="search-box" name="q"/>
+                </div>
+                <div>
+                    <div>🔔</div>
+                    <div><img src="user-logo.png" alt="User Logo" height="30px"></div>
+                    <div>Y mgkDante</div>
+                </div>
+            </section>
+            <section>
+                <div id="welcome-message">
+                    <img src="user-logo.png" alt="User Logo">
+                    <div><p>Hi there!</p>
+                        <h3>Y mgkDante (@mgkDante)</h3>
                     </div>
                 </div>
-                <div class="bottom-nav">
-                    <div class="nav-item">
-                        <a href="#">Settings</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">Support</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#">Privacy</a>
-                    </div>
+                <div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
                 </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-top">
-                <div class="top-left">
-                    <div class="searchbar">
-                        <input type="text" placeholder="Search">
+            </section>
+        </header>
+        <section>
+            <article>
+                <h4>Your Projects</h4>
+                <div>
+                    <div>
+                        <h4>Title1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
+                        </div>
                     </div>
-                    <div class="welcome-message">
-                        <h1>Welcome, User</h1>
+                    <div>
+                        <h4>Title2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
+                        </div>
                     </div>
-                </div>
-                <div class="top-right">
-                    <div class="profile">
-                        <h4>User name</h4>
+                    <div>
+                        <h4>Title3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
+                        </div>
                     </div>
-                    <div class="post-options">
-                        <div class="option">New</div>
-                        <div class="option">Upload</div>
-                        <div class="option">Share</div>
+                    <div>
+                        <h4>Title4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="content-main">
-                <div class="projects">
-                    <h1 id="projects-header">Your projects</h1>
-                    <div class="project-list">
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
+                    <div>
+                        <h4>Title5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
                         </div>
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>Super cool project</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo, itaque iste ipsa
-                                dolore dolores nihil culpa fugiat iure odio quo hic maiores illum alias pariatur facere!
-                                Quasi, earum excepturi.
-                            </p>
-                            <div class="projects-icons">
-
-                            </div>
+                    </div>
+                    <div>
+                        <h4>Title6</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea expedita hic id illo
+                            nesciunt perferendis,</p>
+                        <div class="project-icons">
+                            <img src="star.svg" alt="Favorite">
+                            <img src="watch.svg" alt="Watch">
+                            <img src="fork.svg" alt="Fork">
                         </div>
                     </div>
                 </div>
-                <div class="annoucement-trending">
-                    <div class="announcements">
-                      <h1>Announcements</h1>
-                      <div class="annoucement-list">
-                        <div class="annoucement">
-                          <h6>Announcement</h6>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum harum rem laboriosam nostrum, molestias eveniet deserunt.</p>
+            </article>
+            <aside>
+                <section>
+                    <h4>Announcements</h4>
+                    <div class="aside-cards">
+                        <div>
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
-                        <div class="annoucement">
-                          <h6>Announcement</h6>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum harum rem laboriosam nostrum, molestias eveniet deserunt.</p>
+                        <hr>
+                        <div>
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
-                        <div class="annoucement">
-                          <h6>Announcement</h6>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum harum rem laboriosam nostrum, molestias eveniet deserunt.</p>
+                        <hr>
+                        <div>
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
-                      </div>
                     </div>
-                    <div class="trending-main">
-                      <h1>Trending</h1>
-                      <div class="trending-list">
-                        <div class="trending">
-                          <h6>@handle</h6>
-                          <p>User name online</p>
+                </section>
+                <section>
+                    <h4>Trending</h4>
+                    <div class="aside-cards">
+                        <div class="trending-messages">
+                            <img src="user-logo.png" alt="Trending User Logo">
+                            <div>
+                                <h6>@Tegan</h6>
+                                <p>World Peace Builder</p>
+                            </div>
                         </div>
-                        <div class="trending">
-                          <h6>@handle</h6>
-                          <p>User name online</p>
+                        <div class="trending-messages">
+                            <img src="user-logo.png" alt="Trending User Logo">
+                            <div>
+                                <h6>@mgkDante</h6>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
-                        <div class="trending">
-                          <h6>@handle</h6>
-                          <p>User name online</p>
+                        <div class="trending-messages">
+                            <img src="user-logo.png" alt="Trending User Logo">
+                            <div>
+                                <h6>@Alex</h6>
+                                <p>Life Changing App</p>
+                            </div>
                         </div>
-                        <div class="trending">
-                          <h6>@handle</h6>
-                          <p>User name online</p>
+                        <div class="trending-messages">
+                            <img src="user-logo.png" alt="Trending User Logo">
+                            <div>
+                                <h6>@Alex</h6>
+                                <p>No Traffic Maker</p>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-            </div>
-        </div>
-    </div>
+                </section>
+            </aside>
+        </section>
+    </main>
+</div>
 
 </body>
 
