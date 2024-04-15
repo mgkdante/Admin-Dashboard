@@ -18,4 +18,4 @@ To install this project, follow these steps:
 
 ```bash
 git clone https://github.com/mgkdante/Admin-Dashboard.git
-cd mgkdante_Admin-Dashboard
+cd Admin-Dashboard
